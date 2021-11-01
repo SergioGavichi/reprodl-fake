@@ -109,4 +109,5 @@ def train:
   trainer = pl.Trainer(max_epochs=1)
   trainer.fit(audionet, train_loader, val_loader)
 
-
+if __name__ == "__main__":
+  train()
