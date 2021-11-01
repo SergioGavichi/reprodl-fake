@@ -95,7 +95,7 @@ class AudioNet(pl.LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=1e-3)
         return optimizer
 
-def train:
+def train():
   train_data = ESC50Datatset(folds=[1])
   val_data = ESC50Datatset(folds=[2])
   test_data = ESC50Datatset(folds=[3]) 
